@@ -119,11 +119,13 @@ public class ChatListener {
                     if (config.getBoolean("blacklist.words.autoban.enable")) {
                         String id = String.valueOf(config.getInt("blacklist.words.autoban.id"));
                         String reason = config.getString("IDs." + id + ".reason");
+                        
                         int lvl;
-                        if (idManager.getLastLvl(id) < banManager.getLevel(uuid, reason))
-                            lvl = banManager.getLevel(uuid, reason) + 1;
-                        else
-                            lvl = idManager.getLastLvl(id);
+                             lvl = banManager.getLevel(uuid, reason) + 1;
+                        } else {
+                             lvl = idManager.getLastLvl(id);
+                        }
+
                         Long duration = config.getLong("IDs." + id + ".lvl." + lvl + ".duration");
                         if(duration != -1) duration = duration * 1000;
                         Type type = Type.valueOf(config.getString("IDs." + id + ".lvl." + lvl + ".type"));
