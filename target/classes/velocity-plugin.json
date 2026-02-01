@@ -1,0 +1,1 @@
+{"id":"bansystem","name":"BanSystem","version":"3.1","description":"Punishment System","url":"https://www.spigotmc.org/resources/bansystem-mit-ids-spigot-bungeecord.65863/","authors":["Tobi"],"dependencies":[],"main":"net.coalcube.bansystem.velocity.BanSystemVelocity"}

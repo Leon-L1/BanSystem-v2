@@ -121,10 +121,14 @@ public class ChatListener {
                         String reason = config.getString("IDs." + id + ".reason");
                         
                         int lvl;
+                        if (banManager.getLevel(uuid, reason) < idManager.getLastLvl(id)) {
+                             // Wenn ja: Level erhöhen
                              lvl = banManager.getLevel(uuid, reason) + 1;
                         } else {
+                             // Wenn nein (Max erreicht): Auf Max Level bleiben
                              lvl = idManager.getLastLvl(id);
                         }
+                        // --- FIX END ---
 
                         Long duration = config.getLong("IDs." + id + ".lvl." + lvl + ".duration");
                         if(duration != -1) duration = duration * 1000;

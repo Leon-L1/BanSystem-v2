@@ -1,0 +1,48 @@
+# File version (do NOT edit):
+file-version: 2
+
+# Write every ä, ö, ü like ae, oe, ue
+
+Words:
+  - Arsch
+  - Nutte
+  - Hure
+  - Tits
+  - Pussy
+  - Fick
+  - Basdard
+  - Muschi
+  - beschissen
+  - Huso
+  - Huan
+  - Fresse
+  - Schlampe
+
+Ads:
+  - .de
+  - . de
+  - .  de
+  - PUNKT de
+  - .net
+  - . net
+  - .  net
+  - PUNKT net
+  - .at
+  - .com
+  - .be
+  - .eu
+  - .shop
+  - .it
+  - .org
+  - www.
+  - de.
+  - shop.
+  - .dev
+  - .xyz
+  - .wtf
+  - http://
+  - https://
+
+Whitelist:
+  - example.org
+  - www.example.org

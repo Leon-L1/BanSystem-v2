@@ -1,0 +1,16 @@
+name: BanSystem
+version: 3.2
+author: Tobias Herzig
+main: net.coalcube.bansystem.bungee.BanSystemBungee
+commands:
+  ban:
+  unban:
+  unmute:
+  bansystem:
+  bansys:
+  kick:
+  history:
+    aliases: [hist]
+  check:
+  deletehistory:
+  delhistory:
